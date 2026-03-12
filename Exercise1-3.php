@@ -35,7 +35,7 @@ echo "Double of M: " . $doubleM ."\n";
 echo "Sum of all variables: " . $sumAll ."\n";
 echo "Product of all variables: " . $product ."\n";
 
-function calculator($number1, $number2, $operation) {
+function calculator(int $number1, int $number2, string $operation): float|string {
     switch($operation) {
         case "+":
             return $number1 + $number2;

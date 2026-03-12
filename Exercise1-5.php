@@ -1,5 +1,5 @@
 <?php
-function gradeCheck($grade) {
+function gradeCheck(int $grade) {
     if ($grade < 0 || $grade > 100) {
         return "Grade INVALID";
     }

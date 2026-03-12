@@ -1,5 +1,5 @@
 <?php
-function counter ($startingNumber, $countTimes, $limit){
+function counter (int $startingNumber, int $countTimes, ?int $limit){
     if ($countTimes == 0) {
         echo "You cant start counting by 0!";
         return;

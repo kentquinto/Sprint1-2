@@ -9,7 +9,7 @@ echo "Height: " . $height ."\n";
 echo "Sport: " . $sport ."\n";
 echo "Is Adult: " . $isAdult ."\n";
 
-const NAME = "John";
+define("name", "John");
 
-echo "NAME: " . NAME ."\n";
+echo "Name: " . name ."\n";
 ?>

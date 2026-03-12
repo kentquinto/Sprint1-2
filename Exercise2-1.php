@@ -1,5 +1,5 @@
 <?php
-function totalPrice($minutes){
+function totalPrice(int $minutes){
     $costs = 10;
     if ($minutes > 3){
         $additionalMin = $minutes -3;
