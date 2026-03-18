@@ -1,5 +1,4 @@
 <?php
-
 function calculateSum(int $score1, int $score2, int $score3){
     if ($score1 < 0 || $score1 > 9999 || $score2 < 0 || $score2 > 9999 || $score3 < 0 || $score3 > 9999) {
         return "INVALID SCORES! Must be 0-9999!!!";
@@ -7,7 +6,7 @@ function calculateSum(int $score1, int $score2, int $score3){
     return $score1 + $score2 + $score3;
 }
 
-function calculateAverage(float $sum): float {
+function calculateAverage(float $sum): float | int {
     $average = $sum / 3;
     return $average;
 }

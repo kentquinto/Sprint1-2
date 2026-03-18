@@ -1,10 +1,6 @@
 <?php
 function gradeCheck(int $grade) {
-    if ($grade < 0 || $grade > 100) {
-        return "Grade INVALID";
-    }
-    
-    if ($grade >= 60) {
+    if ($grade <=100 && $grade >= 60) {
         return "Grade is for First Division!";
     }
     else if ($grade < 60 && $grade >= 45) {
@@ -13,9 +9,12 @@ function gradeCheck(int $grade) {
     else if ($grade <45 && $grade >= 33) {
         return "Grade is for Third Division";
     }
-    else {
+    else if ($grade < 33 && $grade >=0) {
         return "You need to take the test again!";
     }
+    else {
+        return "GRADE INVALID";
+    }
 }
-echo gradeCheck(50);
+echo gradeCheck(-1);
 ?>

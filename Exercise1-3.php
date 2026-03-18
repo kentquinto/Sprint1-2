@@ -1,8 +1,8 @@
 <?php
 $X = 10;
 $Y = 5;
-$N = 7.5;
-$M = 2.5;
+$N = 8;
+$M = 4;
 
 echo "X = " . $X ."\n";
 echo "Y = " . $Y ."\n";
@@ -18,7 +18,7 @@ echo "M = " . $M ."\n";
 echo "Sum of N and M: " . ($N + $M) ."\n";
 echo "Difference of N and M: " . ($N - $M) ."\n";
 echo "Product of N and M: " . ($N * $M) ."\n";
-echo "Modulo of N and M: " . ($N % $M) ."\n";
+echo "Module of N and M: " . ($N % $M) ."\n";
 
 $doubleX = 2 * $X;
 $doubleY = 2 * $Y;
@@ -35,7 +35,7 @@ echo "Double of M: " . $doubleM ."\n";
 echo "Sum of all variables: " . $sumAll ."\n";
 echo "Product of all variables: " . $product ."\n";
 
-function calculator(int $number1, int $number2, string $operation): float|string {
+function calculator(float $number1, float $number2, string $operation): float|string {
     switch($operation) {
         case "+":
             return $number1 + $number2;
