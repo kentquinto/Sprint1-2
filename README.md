@@ -1,0 +1,2 @@
+- Exercises for PHP Basics solved.
+- Will add Exercise 3 in the future.
